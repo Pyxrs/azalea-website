@@ -1,24 +1,25 @@
-import './style.css'
-import typescriptLogo from './typescript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.ts'
+import "./style.css";
+import azaleaLogo from "/azalea.png";
+import discordLogo from "./discord.svg";
 
-document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://www.typescriptlang.org/" target="_blank">
-      <img src="${typescriptLogo}" class="logo vanilla" alt="TypeScript logo" />
-    </a>
-    <h1>Vite + TypeScript</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
+document.querySelector<HTMLDivElement>("#app")!.innerHTML = /*html*/ `
+  <nav>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="/maps">Maps</a>
+      <a href="/">Gallery</a>
     </div>
-    <p class="read-the-docs">
-      Click on the Vite and TypeScript logos to learn more
-    </p>
-  </div>
-`
+  </nav>
 
-setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
+  <section class="logo-container">
+    <img src="${azaleaLogo}" alt="Azalea Logo" class="logo" />
+    <h1>Azalea SMP</h1>
+    <div class="ad-banner">SEASON 3 STARTS JAN 12!</div>
+    <br>
+    <br>
+    <button class="join" onclick="window.open('https:\/\/discord.gg/bdF8vZzP8f', '_blank')">
+      <img src="${discordLogo}" alt="Discord Logo" />
+      Discord
+    </button>
+  </section>
+`;
