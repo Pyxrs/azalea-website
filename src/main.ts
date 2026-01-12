@@ -6,7 +6,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = /*html*/ `
   <nav>
     <div class="nav-links">
       <a href="/">Home</a>
-      <a href="/maps">Maps</a>
+      <a href="https://maps.pyxrs.com/azalea-creative">Maps</a>
       <a href="/">Gallery</a>
     </div>
   </nav>
